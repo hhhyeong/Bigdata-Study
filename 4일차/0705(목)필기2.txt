@@ -1,0 +1,53 @@
+def
+함수의 인자로 문은 올수없음. 표현식만 가능.
+lambda는 문? 표현식???????????
+함수의 이름은 snake방식.
+
+
+def moon_sun
+Python은 return 안써도됨.
+
+파이썬에는 상수개념이 없음..!
+dis.Bytecode 처럼 대문자로 시작하는건 상수처럼 쓰는거임.
+
+내부구조 보고싶을땐
+inspect, dis, reflect... 사용한댕.
+
+Parameter과 Argument의 차이
+호출하는거 : Parameter(빵), 정의하는거 : argument(쟁반).
+
+튜플 : "," 컴마로 이어지는것
+
+1) Positional 방법 : parameter의 순서대로 매핑되어 튜플로 출력되는 방법.
+2) Keyword 방식
+Parameter에 넣을때. 에러날때 두개방법 중하나는 될거랭.
+
+
+Java에서 함수의 시그너처를 안맞추면 Error가 났는데
+Python에서도 Positional Erro남. 기본값을 줄 수 있음.
+
+(C언어의)Compile Error == (Python의) Syntex Error
+(C언어의)Runtime Error == (Python의) Exception
+
+뒤에꺼만 있으면 앞에꺼에 디폴트값을 줄 수 없음.
+싹다 뒤에서부터 차례차례 None
+
+default값은 뒤에서부터 역순으로 채워야하고, 중간에 빠지면 Systax에러남.
+=> 아예 실행안되고 에러나는것.
+
+
+
+Container이지만 Sequence가 아닌애.
+Container : 다양한 자료구조를 담을 수 있는거.(list, set, tuple, dict)
+=> Frozen
+=> Set, FrozenSet, dict
+
+Sequence인데 Container가 아닌애
+=> Strign 3총사, range(컨테이너아니고 Flat임.).
+
+기본적인 자료구조가 엄청많음. .... 용도에맞게 골라쓸수잇어야함..!!!!
+
+
+
+Packing(*) Unpacking(**)
+

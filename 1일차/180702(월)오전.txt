@@ -1,0 +1,256 @@
+Java/Python/R언어 기반으로할지 고민..
+=> Java를 실무에선 더많이사용, 시스템안정화. but 개발생산성이 높지않음.
+
+1주차 : Python(4일_28h).
+2,3주차 : Data 수집,처리(hadoop,Spark,elastic, Git)
+4주차 : 웹기반시스템 개발(flask, 백엔드/프론트앤드 나눠서.)
+5-6주차 : 데잍터분석(pandas,scikit-learn,tf(keras,pytorch), 공공데이터or케글데이터+자체데이터.
+5가지패턴을 분석할 수 있을것.)
+7-8주차 : 프로젝트(빅데이터기반의 기능정보시스템 개발....)
+
+<9월 공공데이터 활용 경진대회>
+<포스코 AI경진대회>
+<삼성 DataScientist>
+<NAver DataScientist>
+<SantaClova챗봇>
+
+월화수 : Python - 함수형 접근기법 제공.
+목금 : 디자인패턴
+C Java Web관련언어,... 
+Scala가 또 카카오톡에서 이용하면서 인기가 많아졋댕.
+
+Tiobe index에 상위랭크되는.
+Q. C언어가 왜 인기있을까?
+=> 하위언어라서?
+=> Python은 약간 또라이 ㅋ
+	- Humorous. 스팸어랏 뮤지컬에서 Monty Python에서 따온 네이밍.
+	- 심심해서만든언어가 Python.?
+	- 숫자 42를 좋아함.
+	- Life is short, You need python! : 파이썬을 쓰면 생산성이 높다.=>효율,시간cost 줄여줌.
+	- Multi Paradigm : 프로그래밍언어개론.
+명령형) Imperative - 절차/구조/객체지향(C, JAVA)
+선언형) Declarative (SQL, HTML?)/ 함수적기법 제공됨(Python)./
+	
+	- Clue Language.
+	- 보통 말하는 파이썬은 C기반 파이썬(cpython). C하고 제일잘붙음. 파이썬으로 코딩하고 C에서 제공하는 API사용하면 굳.
+	-데이터형을 지정해야하는 Cython
+	-Jthon : JAva기반. java API갖다쓸수있음.
+	-.Net기반. PythonNet
+	
+Library & Tool.
+	- 버전에따른 호환성문제 => 아나콘다 설치로 해결.
+	
+iPython : interactive Python.
+BDFL : 자발적 독재자. 파이썬은 파이썬만든 사람이 기드발루썸이 자기가 생각하기에 더 좋다고 생각하는 open source commit 된거를 선택한댕.
+
+<Expression VS Statement : 표현식 VS. 문법>
+	- 표현식(=평가식) : 계산전 1도 식. 계산값도 식. 문자열도 식. 함수도 식.
+	- 이름이 없는 함수 : lamda는 식. 식의 종류에 대해 알아야함. 계산하는법/ 계산결과가 어떻게나오는지 알아야함.
+	- 1+1+1+1 이 계산되는 방식 : 기본적으로 왼쪽에서 오른쪽으로 산됨. 
+		=> 2+1+1	=> 3+1		=> 4
+
+<구문 : Keyword>
+	- Statement는 Keyword가 꼭 들어가야함.
+	- 할당, 대입 : '=' python에서는 binding이라는말을 더 자주 씀.
+	- 선언 : python에서는 함수와 클래스에서만 선언이 있음. 변수에서는 선언이 없음.
+
+<Operation>
+- 연산자 우선순위.
+	a는 변수. 파이썬은 '변수'라는 말 잘 안씀. 
+	- 파이썬은 객체지향언어, 모든게 다 객체기때문에, 변수라기보다는 통칭하는 말로 '식별자(=name.이름붙이다)'라고 하는 게 맞음.
+	- 이름붙인상수 const 개념이 Python에선 없음.
+	- 수에 관해서는 선언이 없음. C에서는 int a; 이렇게 선언만하는게 가능했지만, Python에서는 선언만하는건 불가능하기때문에 a라고 치면 name오류남. Python에서는 선언과 할당이 동시에 되는 형태로 사용해야함.
+	- 파이썬 문법) 키워드(규칙)의 수가 적다. 31개정도. 다른언어 C++는 62개.. C++은 언어에 익숙한 사람들이 잘하는언어임.
+	- 대소문자 구분함. inf == INF. 복소수에서 1+1J == 1+1j.
+	- Python3부터는 documentation이 한글 지원됨. 배우기 쉬움. 우리나라 고딩들부터 선택으로 Python배우게되서 지원하나봄ㅋㅋ
+	- Python에서 comment하는 방식 3가지
+	 (#(멀티Python은 line주석이 없음.), #!(주석 아님. Unix기반으로 만들 때 Shell-srcript관련해서 쓰는거.) # -*- <>..(인코딩할때 사용.))
+		docstring :..." 을 주석대신쓰기도함.
+	- ";" : 두 문을 이어준다는 뜻. 파이썬에서는 가독성이 안좋으므로 기본적으로 안쓰는 걸 권장사항으로 함.
+	- *****상수가 없음! 상수는 변하지 않는 수. immutable개념이 있기때문에 상수가 없어도 됨.
+		- 함수형 문법을 배운다면 immutable이 굉장히 중요한 개념임.
+	- object reference 가비지컬렉션하면서 배운거 몰라도된댕.
+	- None
+	- scope
+
+
+<연산자>
+- 연산자 우선순위.
+- '=' : 할당연산자
+  5가지
+	=> x=y=z=0	//x,y,z는 미지수이기때문에, 왼쪽부터 연산되는 게 아니라 =0부터 연산됨.
+- ****쫌이따할거.깊은내용) packing VS. unpacking기법
+	
+- 증감할당연산자 "+=" 총 12가지 있음.
+- global : scope를 벗어나서 참조하는 할당 방법
+- 증감할당연산자(++, --) 없음.
+- a++(불가능.) ++a(가능. +연산자가 중복된것이라고 생각.)
+- __ 총 6가지? 나중에~
+- pp pie (python initialize proposal) 의미있는 python변수 이름짓는 표준적인 방법. 
+	1) 클래스는 파스칼방식(단어의 첫글자는 대문자로(MoonIsBequtiful))으로 선언.
+	2) 카멜방식은 잘 안씀(moonIsBeautiful)
+	3) 함수이름은 스네이크방식(moon_is_beautiful)
+
+
+-표준 : (=standard , depecto, recommendation(사교적 기법. 보통 recommendation이라고 나오는 말은 그냥 표준이라고 알면됨. 알아서 조심해서 써라 이정도~)). 표준 틀렸다고 뭐라고 안함. 
+butt, python3 부터 문근영=1 이라고 알파벳말고도 한글이나 중국말로도 식별자 naming 가능해짐.
+
+
+
+
+<총 숫재형에 대한 함수 연습은 뭐가 있는지 아는게 또 중요함...!>
+
+int타입은 4가지.
+정수타입은 16가지??????//
+
+float : 소숫점이 있는애. 앞의 0생략 가능(.5), 뒤의0도 생략 가능(0.)
+
+0x : 16진수
+0o : 8진수
+
+Q. 어떤숫자를 236을 16진수로 바꾸고싶다?
+	=> hex(236)
+int('233', 16)			// 563 출력됨.
+
+
+<문자열>
+파이썬에서 문자는 비교 가능하다.
+문자열 * 문자열.
+문자열 + 숫자
+
+
+python3.6부터 minilanguage? 개념?? list?
+머앙야아
+
+
+
+
+
+<set의 관점에서>
+sequence(X)
+muttabl(O)
+
+frozenset은 sequence하진않지만 immutable함..! 속도가 빠름.
+
+
+
+
+
+
+REPL(IDE 통합개발환경_iPython,Pycham/TextEditor) : 코드를 치면 바로 결과를 보여줌. 
+	- 계산기처럼 사용가능.(4칙연산, 승까지 모두 계산 가능.)
+	- 문자는 에러남.
+		- Dynamic Type언어 : Python에서는 타입의 개념은 있지만, 명시적으로 표시하진 않음.
+		- 파이썬은 숫자타입 4가지.
+		  (complex(1+3j)(복소수)/int(정수형)/ float(.3)(0.3)(부동소수점.유리수)/ bool형(True)(False))
+		  (무한대는 숫자일가 아닐까? => 파이썬에서는 숫자로 취급. float형으로 취금.)
+			- .3 = 0.3
+			- 파이썬3부터는 bool 지원.
+		- type(a) : 타입이 뭔지 확인하는 명령어
+		- dir(a)
+			- __ : double underbar = 던두? = 객체지향이랑 관련있음.
+			- Shift + tab : 도움말기능 뜸. ESC키로 없앨 수 있음. 모르는 키워드쓸 때 사용하세염.
+				- (shift + tab) * 4번까지 누를 수 있음.
+			- a.bit_length() : 2 			// 3은 피트로 01이므로 길이가 2임.
+			- a.	+ tab 				// 겁나많은 method가 나옴. 뭔지모르겠다면 도움말 참고.
+			- b.is_integer() : False		// 정수형인지 아닌지. 프로그래밍을 잘한다는건, 적절한 라이브러리를 갖다쓸줄아는것.
+			- aa = -1
+			- aa.__abs__() : 1			
+
+
+
+		- 문자열은 3가지 타입이 존재. 문장,문자열, 다 똑같이 취급함.
+		  (str : 문자열, bytes : 바이트형, bytearray : 바이트어레이형)
+			- str생성 : '' 홑따옴표가 기본. ''홑따옴표나 ""겉따옴표로 표현 가능.
+			- byte는 Literal 방식으로 생성할 수 없음. 문자열은 byte로 나타냈을 때, 리터럴로 나타낼 수 있는 범위에서 벗어나기때문.
+			- str, bytes, bytearray는 sequece타입이다.(순서가 있음. sequence는 indexing 또는 slicing이 가능하다. 당연하죠. 순서가 있어야 의미가 있는거니까.)
+			
+				- a[3]
+				- a[0:3]
+				- 
+			- doctype: protocol??
+			- 한꺼번에 여러개 묶어서 관리하는 것 : Container.
+				- 파이썬의 기본적인 Comtainer 4가지 : 
+				- Sequence 는 총 5가지 :  (str관련된 두가지(str, byte, bytearray)) list, tuple 
+				- Sequence 타입은 기본적으로 2가지 타입이 있음.
+					- 1) type이 똑같은 데이터가 들어가는 애.		// a = [3, 1, "문근영"]
+					- 2) type이 다른 데이터가 들어가는 애.			// b = (3, 1, "문근영")
+
+				- mapping 타입은 2가지 있음							//
+				  (dic타입(dictionary), set)
+				  - 1) dic타입 : key, value값 갖음.
+				  - 2) set타입 : key없고 value만..?
+					- 둘중하나는 literal타입이 없음.				
+					- set은 dic을 상속받아서 만든 개념이라서, 
+					- key로 접근함.
+						c['a']
+					- set은 집합의 속성(중복허용X, 순서가 없음)과 같음.
+					- 순서가 없고 중복이 업승ㄹ때 set쓰면좋고, key값으로 접근하려면 dic.
+			- list 와 tuple의 차이점 : list는 muttable. 
+			- mutable속성 : 분류하는 방식...!!!!!! mutability : 메모리에 쌓이는 구조가 다름.?
+			- muttable타입은 4가지 :  bytearray. set, list, dic
+			- sequence하게 분류하는 방법.
+			
+
+			- % : phython 언어는 아니고, ipython(주피터)에서 추가된 기능임.
+			    현재 디렉토리 정보?.
+				- %who
+				- %whos
+				- %who_ls
+			- new notebook에 a입력했을 때, namespace에서 해당 변수 이름이 있는지 찾고, 있으면 a의 값 출력하는 것.
+			- a=3일 때와 a="off"일 때의 id(a)값이 다름.
+			- 숫자 정수형일경우 -5 ~ 256까지는 cache가 되어있음. 따라서 얘만 예외이고, 나머지 정수는 immutable인 애임.
+			- 파이썬도 Garbage Collection가 있음. 참조카운트가 있음??!
+			= 파이썬은 모든게 객체임! 모듈도, 숫자도 모든게 객체기때문에, type(), dir() 모두존쟇ㅁ.
+			- import sys 		// sys는 시스템 관련한 기능 모여있음.
+			- overflow : 정해진 크기보다 크면, 벗어나면 oveflow, 못미치면 underflow.
+			- sys.maxsize 		// Python에서 가장 큰 정수 값.
+				a = 9223372036854775807 + 1	//오버플러우 발생안함. 파이썬에서는 오버플로우가 없음..!!
+			- overflow가 없는거 : arbitrary precision. overflow와 under flow가 없음.
+파이썬은 자동으로 메모리 잡아줘서 바꿔줌. 사용자에겐 편하지만, 파이썬이 체크해야할게 많아지므로 속도가 느려짐.
+
+
+	- 값을 생성하는 방법 2가지
+		1) Literal : L붙이고, .3, 기호 붙여서 생성하는 방법.
+		2) 객체생성방법 :  flaot('inf'), b = int(3), ... 값만 써서 표현하는 방식. init() 초기화시킬때 생성자 활용한 방식.
+		ex) zb = bool() : Fasle		// bool형의 초기값은 false.
+		    zf = float() : 0.0
+		    zi = int()	: 0		// int형의 초기값은 0.
+		    zc = complex() : 0j		// complex형의 초기값은 0j.
+Jupyterlab : 개발 지향적.
+***Jupyte Notebook : 연구자(Scientist) 지향적. 다양한 결과물. 보고서지향. chart그리는 데 최적화.
+	- 원래 iPython Notebook이었는데 JULIA, python, R를 호환시켜준다해서 이름이 jupyter 노트북이됨.
+
+- shift + Enter : 실행
+- import this > Alt + Enter : 파이썬의 철학.
+- import antigravity(tab키로 자동완성) : 파이썬짱이당.
+이스태그?	// 개발자들이 숨겨놓은 기능.
+
+	- 색깔에 민감함 : 초록색 : Python의 기본명령어라는 뜻.
+	- Python3실행.
+	- ESC키누르면 파란색으로 바뀜.(명령형 모드로 바뀜_특별한기능을 함. 편집가능. vi편집기랑 비슷.특별한 기능을한당.)
+	- Enter누르면 초록색으로 바뀜.()
+	- h키 누르면 도움말 뜸.
+	- ESC > M : 마크다운 언어로 바뀜. 마크다운을 통해 노트필기 가능하게 함.
+	- ESC > Y : code형
+	- ESC > M > 1 : #이 나옴. 글자 크기 달라짐.
+	- ESC > M > 2 : ##이 나옴.
+	- ESC > M > L : 라인넘버 생김.
+	- ESC > M > - : 목록을 만들 수 있음.
+	- ESC > M > 1. : 숫자 목록만들기.
+	- ESC > M > 1 : Markdown언어 적용 안됨.
+코드와 마크다운언어로 노트필기 동시에 할 수 있음!
+	- ESC > M > --- : 줄쫙긋기. 영역구분.
+	- ESC > M > > : 인용할 때 사용.
+	- ESC(명령형모드에서) > DD : 셀 삭제.
+	- Ctrl + / : 주석처리.
+	- C : 복사.  P : 붙여넣기.			// 엥 왜안되지
+	- Z : 실행취소.
+	- a : 위에 삽입. b : 아래 삽입.
+
+Atom, 
+	- 명령형모드는 VI에디터 뻬낀거.
+	- Ctrl + Shift + P : sublime 베낌.
+	- _ : 마지막 output값 나옴.(_3 : ln[3]에 있는 output값 나옴.)
+
+커널 : 기본적으로 Python3기반으로 되어이음.

@@ -1,0 +1,62 @@
+<* 는 나머지 튜플의 고정된 값 외의 나머지 값을 나타냄>
+
+a, *b, c = 1,2,3,4,5,6,7,8
+
+
+
+
+
+<함수의 parameter로 쓰일 때, * 은 무조건 맨 마지막 매개변수에 써야함.>
+#안되는 예제.
+def moon_sun(a, *b, c):
+    return a,b,c
+
+#되는 예제.
+def moon_sun(a, b, *c):
+    return a,b,c
+
+moon_sun(1,1,2,3,43,4,5,"11", ["asd"])
+
+++++단, 중간의 매개변수에 붙이려면 * 다음에 오는 arguments는 keyValue형식으로 와야함.
+
+
+
+
+
+
+<함수 parameter의 제일 처음에 이름없이 *를 박아버리면, parameter로 Keyword argument만 받을 수 있게됨. Positional argument받으면 에러.>
+def moon_sun(*, x, y):
+    return x,y
+
+#안되는 호출.
+#moon_sun(12, x = 2, y = 1)
+#moon_sun(z = 12, x = 2, y = 1)
+
+#되는 호출.
+moon_sun(x = 2, y = 2)
+
+
++++++Positional Arguments와 Keyword Arguments를 섞어 쓸 때.
+# Positional Arguments 가 Keyword Argument 뒤에와야함....!!!!!!!
+
+
+
+
+
+
+
+<argument에 * 또는 ** 가 들어갈때>
+=> Packing(*) Unpacking(**) 기능.
+
+
+
+
+
+<함수의 parameter(헤더(signiture))에 * 또는 ** 가 들어갈 때>
+parameter 앞에 **가 붙을 경우, keyword argument를 받는다.
+keyworkd argument는 positional argument 앞에 올 수 없고!!!!
+** 는 * 뒤에 와야하기때문에, 
+
+결국, Keyword Argument 들과 **가 매핑된당..!!!!!!!!!!
+=> 따라서, ** 매개변수에 들어오는 값은 dict 형태가 됨.
+

@@ -1,0 +1,52 @@
+Q. iterable은 몇가지? 
+A. 총8가지 (문자열3개 + list, tuple, set, frozenset, dic)
+
+for a in 1,2,3,4,5:	// tuple은 iterable이기때문에
+	pint(a)		// 가능.
+
+
+Q. Sequence 는 몇가지?
+총 5가지.
+
+Q. mutable은 몇가지?
+
+
+
+for a in [iterable]
+
+
+<protocol을 따르면 이러한 성질을 갖는다.>
+
+
+<산술연산자>
+Q. numeric과 관련된 4개 : complex, int, bool, float.
+
+
+숫자 아닌것도 float로 친다.
+'inf' + 'inf' = 'inf'
+
+a = 'inf' - 'inf'	// type(a) : nan 	// float형임.
+
+
+x == x + 1 	// True가 존재함. 'inf'일 때!
+
++ - * / // % **(exponation?승.) 
+
+
+
+<비교연산자>
+ * equality
+is : 메모리 번지까지 같은지, 
+== : equality. 값이 같은지.
+!= : 값이 같지 않은지.
+is not : 
+
+<
+>
+*** 문자열의 대소비교 가능? 리스트끼리의 대소비교 가능? 
+***** set의 대소비교 가능?
+
+ * 멤버쉽 연산자
+iterable함.
+not in
+- 멤버십 체크할 때는 키만 체크한다.
