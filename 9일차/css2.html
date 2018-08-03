@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <style>
+            div {border:1px solid #aaaaaa;}
+            #id1 {position:relative; height:50px; background-color:rgba{200, 200, 100, 0.2};}
+            #id2 {position:absolute; top:100px; left:200px}
+            #id3 {position:fixed; top:100px; left:200px; text-align:center;}
+            #id1 > ul {position:absolute; top:50px; left:200px; border:1px solid #aaaaaa; display:none;}
+            #id1:hover > ul {display:block}
+        </style>
+    </head>
+    <body>
+        <div id="id1">
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴1</li>
+            </ul>
+        </div>
+        <div id="id2">Content2</div>
+        <div id="id3">Content3</div>
+    </body>
+</html>

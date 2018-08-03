@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            div {border:1px solid #aaaaaa; width:800px; height:200px; opacity:0.5;background-color:yellow}
+            #div2 {width:200px; height:500px; float:left; background-color : red;}
+            #div3 {width:200px; height:500px; float:right; background-color : blue;}
+            #div4 {clear:both; background-color: green;}
+            #div1 + div {clear:both; content:””; display:table;}
+        </style>
+    </head>
+    <body>
+        <div id="div1">Header</div>
+        <!-- div2, div3이 800px안에서 놀게하기 위해 div로 한번 더 감쌈. 
+                 but,div입장에서 div2, div3이 float기때문에 누구를 품고있는지 몰라버리게됨.
+                 부모div에게 div2, div3도 너의 자식이라는걸 알려줘야함.
+                 => div2, div3을 품고있는 부모 div에게 clearfix를 지정해줘야함. -->
+        <div>
+            <div id="div2">Side</div>
+            <div id="div3">Content</div>
+        </div>
+        <div id="div4">Footer</div>
+    </body>
+</html>
